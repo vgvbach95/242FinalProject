@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">{% autoescape true %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Remind Me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:700,400italic,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/content.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <section id="header">
+        <nav class="navbar navbar-default">
+            <div id="header-body" class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <h1 id="brand">Remind Me To:</h1>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li id="secondary-catagory" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li class="active tabs" style="background-color: #777"><a href="#">
+                            <img src="static/images/star-2-48.png" alt="home" height="32" width="32">
+                        </a></li>
+                        <li class="tabs" style="background-color: #d82735"><a href="#">
+                            <img src="static/images/hearts-48.png" alt="home" height="32" width="32">
+                        </a></li>
+                        <li class="tabs" style="background-color: #ff7435"><a href="#">
+                            <img src="static/images/book-48.png" alt="home" height="32" width="32">
+                        </a></li>
+                        <li class="tabs" style="background-color: #009e47"><a href="#">
+                            <img src="static/images/weightlift-48.png" alt="home" height="32" width="32">
+                        </a></li>
+                        <li class="tabs" style="background-color: #0079e7"><a href="#">
+                            <img src="static/images/home-6-48.png" alt="home" height="32" width="32">
+                        </a></li>
+                        <li class="tabs" style="background-color: #7d3cb5"><a href="#">
+                            <img src="static/images/knight-48.png" alt="home" height="32" width="32">
+                        </a></li>
+                        <li class="tabs" style="background-color: #777"><a href="#">
+                            <img src="static/images/plus-4-48.png" alt="home" height="32" width="32">
+                        </a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div id="divider"></div>
+    </section>
+    <section id="body">
+        <div class="row" id="notepads">
+            <div class="col-md-4 notepad">
+                <div class="row">
+                    <div class=".col-md-12 sticky-note" style="background-color:#ffff8f">
+                        <section id="all-task-list">
+                            <h2>All Tasks</h2>
+                            <article class="task-block">
+                                
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 notepad">
+                <div class="row">
+                    <div class=".col-md-12 sticky-note" style="background-color:#fda">
+                        <section id="all-task-list">
+                            <h2>Upcoming</h2>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 notepad">
+                <div class="row">
+                    <div class=".col-md-12 sticky-note" style="background-color:#CBFAFA">
+                        <section id="all-task-list">
+                            <h2>Don't Forget</h2>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div id="logout-bar">
+            <a href="#">Logout</a>
+        </div>
+    </section>
+</body>
+</html>
+{% endautoescape %}
